@@ -1,12 +1,13 @@
 import Image from "next/image";
-import { ImageCarousel } from "./MainPage/MainPage";
+import { ImageCarousel } from "./LayoutsOfPagesAll/MainPage";
 
 
 export default function Home() {
- 
+const xc ="https://www.freeiconspng.com/uploads/3d-icon-0.png"
   return (
     <div className="wrapper-carousel-image">
-   <ImageCarousel testput="yes" 	images={[
+   <ImageCarousel  	
+								 images={[
 				
 						...[
 							{
@@ -28,11 +29,6 @@ export default function Home() {
 								url: "https://cdn.pixabay.com/photo/2024/03/07/22/56/woman-8619512_1280.jpg",
 								alt: "string",
 								type: "image",
-							},
-							{
-								url: "https://cdn.pixabay.com/photo/2024/03/07/22/56/woman-8619512_1280.jpg",
-								alt: "string",
-								type: "",
 							},
 						
 							

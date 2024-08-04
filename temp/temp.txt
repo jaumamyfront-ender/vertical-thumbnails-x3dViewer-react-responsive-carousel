@@ -1,0 +1,65 @@
+		
+            		<Carousel
+			// className={css.image_wrapper}
+
+			axis="horizontal"
+			showThumbs={true}
+			showIndicators={false}
+			stopOnHover={true}
+			emulateTouch={true}
+			thumbWidth={thumbWidth}
+			swipeable={true}
+			showArrows={true}
+		>
+		
+	    {images.map((image, index) => (
+			<div key={index} style={{ width: "100%", height: "100%" }}>
+			
+					<img
+						src={image.url}
+						alt={image.alt}
+						style={{ width: "99%", height: "100%", objectFit: "cover", borderRadius: "5%" }}
+					/>
+				
+				
+				
+			</div>
+		))}
+	</Carousel>
+	    <Carousel renderItem={customRenderItem}>
+      {images.map((image, index) => (
+        <ReturnImagesChildren key={index}>
+          <img
+            src={image.url}
+            alt={image.alt}
+            style={{
+              width: "99%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "5%",
+            }}
+          />
+        </ReturnImagesChildren>
+      ))}
+    </Carousel>
+	      {/* <ReturnImagesChildren>
+        <img
+          src={images[0].url}
+          alt={""}
+          style={{
+            width: "99%",
+            height: "100%",
+            objectFit: "cover",
+            borderRadius: "5%",
+          }}
+        />
+      </ReturnImagesChildren>
+      <ReturnImagesChildren>
+      <img 
+        src={images[0].url}
+        alt="A description of the image" 
+        loading="lazy" 
+        style={{ maxWidth: '100%', height: 'auto', objectFit: "cover",borderRadius: "5%", }}
+      />
+        />
+      </ReturnImagesChildren> */}

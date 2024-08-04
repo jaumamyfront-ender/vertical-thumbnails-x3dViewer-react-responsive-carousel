@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      carousel:
-        specifier: file:carousel-3.2.81.tgz
-        version: file:carousel-3.2.81.tgz
       next:
         specifier: 14.2.4
         version: 14.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -20,9 +17,15 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      react-player:
+        specifier: ^2.16.0
+        version: 2.16.0(react@18.3.1)
       react-responsive:
         specifier: ^10.0.0
         version: 10.0.0(react@18.3.1)
+      react-responsive-carousel:
+        specifier: ^3.2.23
+        version: 3.2.23
     devDependencies:
       '@types/node':
         specifier: ^20.14.2
@@ -380,10 +383,6 @@ packages:
   caniuse-lite@1.0.30001636:
     resolution: {integrity: sha512-bMg2vmr8XBsbL6Lr0UHXy/21m84FTxDLWn2FSqMd5PrlbMxwJlQnC2YWYxVgp66PZE+BBNF2jYQUBKCo1FDeZg==}
 
-  carousel@file:carousel-3.2.81.tgz:
-    resolution: {integrity: sha512-z/R2yptQm7JwpzfN/zELkYTYL2mStPzGAnMzVqL/aclNH3+vUefWdGoE5qhhTPeYxCufDbp0EWcSURIjRkFSYw==, tarball: file:carousel-3.2.81.tgz}
-    version: 3.2.81
-
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
@@ -461,6 +460,10 @@ packages:
 
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
+
+  deepmerge@4.3.1:
+    resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
+    engines: {node: '>=0.10.0'}
 
   define-data-property@1.1.4:
     resolution: {integrity: sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==}
@@ -985,6 +988,9 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
+  load-script@1.0.0:
+    resolution: {integrity: sha512-kPEjMFtZvwL9TaZo0uZ2ml+Ye9HUMmPwbYRJ324qF9tqMejwykJ5ggTyvzmrbBeapCAbk98BSbTeovHEEP1uCA==}
+
   locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
@@ -1002,6 +1008,9 @@ packages:
 
   matchmediaquery@0.4.2:
     resolution: {integrity: sha512-wrZpoT50ehYOudhDjt/YvUJc6eUzcdFPdmbizfgvswCKNHD1/OBOHYJpHie+HXpu6bSkEGieFMYk6VuutaiRfA==}
+
+  memoize-one@5.2.1:
+    resolution: {integrity: sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==}
 
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -1236,8 +1245,19 @@ packages:
     resolution: {integrity: sha512-OeR2jAxdoqUMHIn/nS9fgreI5hSpgGoL5ezdal4+oO7YSSgJR8ga+PkYGJrSrJ9MKlPcQjMQXnketrD7WNmNsg==}
     engines: {node: '>= 6'}
 
+  react-fast-compare@3.2.2:
+    resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react-player@2.16.0:
+    resolution: {integrity: sha512-mAIPHfioD7yxO0GNYVFD1303QFtI3lyyQZLY229UEAp/a10cSW+hPcakg0Keq8uWJxT2OiT/4Gt+Lc9bD6bJmQ==}
+    peerDependencies:
+      react: '>=16.6.0'
+
+  react-responsive-carousel@3.2.23:
+    resolution: {integrity: sha512-pqJLsBaKHWJhw/ItODgbVoziR2z4lpcJg+YwmRlSk4rKH32VE633mAtZZ9kDXjy4wFO+pgUZmDKPsPe1fPmHCg==}
 
   react-responsive@10.0.0:
     resolution: {integrity: sha512-N6/UiRLGQyGUqrarhBZmrSmHi2FXSD++N5VbSKsBBvWfG0ZV7asvUBluSv5lSzdMyEVjzZ6Y8DL4OHABiztDOg==}
@@ -1885,12 +1905,6 @@ snapshots:
 
   caniuse-lite@1.0.30001636: {}
 
-  carousel@file:carousel-3.2.81.tgz:
-    dependencies:
-      classnames: 2.5.1
-      prop-types: 15.8.1
-      react-easy-swipe: 0.0.21
-
   chalk@4.1.2:
     dependencies:
       ansi-styles: 4.3.0
@@ -1963,6 +1977,8 @@ snapshots:
       ms: 2.1.2
 
   deep-is@0.1.4: {}
+
+  deepmerge@4.3.1: {}
 
   define-data-property@1.1.4:
     dependencies:
@@ -2647,6 +2663,8 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
+  load-script@1.0.0: {}
+
   locate-path@6.0.0:
     dependencies:
       p-locate: 5.0.0
@@ -2662,6 +2680,8 @@ snapshots:
   matchmediaquery@0.4.2:
     dependencies:
       css-mediaquery: 0.1.2
+
+  memoize-one@5.2.1: {}
 
   merge2@1.4.1: {}
 
@@ -2888,7 +2908,24 @@ snapshots:
     dependencies:
       prop-types: 15.8.1
 
+  react-fast-compare@3.2.2: {}
+
   react-is@16.13.1: {}
+
+  react-player@2.16.0(react@18.3.1):
+    dependencies:
+      deepmerge: 4.3.1
+      load-script: 1.0.0
+      memoize-one: 5.2.1
+      prop-types: 15.8.1
+      react: 18.3.1
+      react-fast-compare: 3.2.2
+
+  react-responsive-carousel@3.2.23:
+    dependencies:
+      classnames: 2.5.1
+      prop-types: 15.8.1
+      react-easy-swipe: 0.0.21
 
   react-responsive@10.0.0(react@18.3.1):
     dependencies:
