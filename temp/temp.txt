@@ -63,3 +63,14 @@
       />
         />
       </ReturnImagesChildren> */}
+      <ReturnImagesChildren image={images[0].url}/>
+<ReturnImagesChildren image={images[1].url}/>
+<ReturnImagesChildren image={images[2].url}/>
+<ReturnImagesChildren image={images[3].url}/>
+<ReturnImagesChildren image={images[4].url}/>
+<ReturnImagesChildren image={images[5].url}/>
+ <X3DViewer object3d="yourrrrrrrr" image={images[6].url}/>
+ const getThumbFromChildrenComponents = (images:any) =>
+    images.map((image:any,index:any) => {
+      return <img key={index} src={image.url} />;
+    });
